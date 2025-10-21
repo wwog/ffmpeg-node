@@ -1,0 +1,47 @@
+{
+  "name": "ffmpeg-node",
+  "version": "1.0.0",
+  "description": "A C N-API module with FFmpeg integration for video codec analysis",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "packageManager": "pnpm@10.18.3+sha512.bbd16e6d7286fd7e01f6b3c0b3c932cda2965c06a908328f74663f10a9aea51f1129eea615134bf992831b009eabe167ecb7008b597f40ff9bc75946aadfb08d",
+  "scripts": {
+    "install:vcpkg": "node scripts/install_vcpkg.js",
+    "prepare": "node scripts/prepare.js",
+    "build": "node-gyp rebuild",
+    "install": "npm run install:vcpkg && npm run prepare && node-gyp rebuild",
+    "test": "node test.js",
+    "examples": "node examples.js",
+    "clean": "node-gyp clean",
+    "clean:all": "node-gyp clean && rm -rf vcpkg build lib_sources src/ffmpeg_crt.c",
+    "rebuild": "npm run clean && npm run build",
+    "rebuild:all": "npm run clean:all && npm install"
+  },
+  "keywords": [
+    "napi",
+    "native",
+    "addon",
+    "c",
+    "ffmpeg"
+  ],
+  "author": "wwog",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "devDependencies": {
+    "node-addon-api": "^8.5.0",
+    "node-gyp-build": "^4.8.4",
+    "unbzip2-stream": "^1.4.3",
+    "axios": "^1.12.2",
+    "tar": "^7.5.1"
+  },
+  "gypfile": true,
+  "napi": {
+    "name": "napi-ffmpeg",
+    "version": "1.0.0"
+  },
+  "dependencies": {
+    "node-gyp": "^11.5.0"
+  }
+}

@@ -1,0 +1,9 @@
+# vcpkg 和构建缓存（文件太大）
+vcpkg/
+lib_work/
+lib_sources/
+build/
+
+# 依赖
+node_modules/
+
