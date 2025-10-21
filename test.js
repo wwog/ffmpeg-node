@@ -162,8 +162,6 @@ async function runAllTests() {
   results.push(test4_createTestVideo());
   await waitForEnter();
   
-  results.push(await test5_promiseAPI());
-  
   console.log('='.repeat(70));
   console.log('  测试总结');
   console.log('='.repeat(70));

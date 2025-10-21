@@ -42,25 +42,6 @@ function run(args) {
   return nativeModule.run(stringArgs);
 }
 
-/**
- * 运行 FFmpeg 命令（Promise 版本）
- * @param {string[]} args - FFmpeg 命令行参数
- * @returns {Promise<number>} - 返回退出码的 Promise
- */
-function runAsync(args) {
-  return new Promise((resolve, reject) => {
-    try {
-      const exitCode = run(args);
-      if (exitCode === 0) {
-        resolve(exitCode);
-      } else {
-        reject(new Error(`FFmpeg 退出码: ${exitCode}`));
-      }
-    } catch (error) {
-      reject(error);
-    }
-  });
-}
 
 /**
  * 获取版本信息
@@ -96,7 +77,6 @@ function help() {
 
 module.exports = {
   run,
-  runAsync,
   version,
   formats,
   codecs,
