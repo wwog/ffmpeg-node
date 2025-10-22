@@ -1,9 +1,9 @@
 /* 
- * 此文件从 FFmpeg fftools/ffmpeg.c 自动生成
- * main() 函数已重命名为 ffmpeg_entry() 供 Node.js 调用
+ * This file is auto-generated from FFmpeg fftools/ffmpeg.c
+ * main() function has been renamed to ffmpeg_entry() for Node.js calling
  * 
- * 原始文件: /Users/snto_web_1/dev/ffmpeg-node-v2/lib_sources/ffmpeg/fftools/ffmpeg.c
- * 生成时间: 2025-10-21T10:12:48.680Z
+ * Original file: /Users/snto_web_1/dev/ffmpeg-node-v2/lib_sources/ffmpeg/fftools/ffmpeg.c
+ * Generated time: 2025-10-21T10:12:48.680Z
  */
 
 /*

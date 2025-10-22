@@ -159,11 +159,11 @@ static inline unsigned int stdc_trailing_zeros(unsigned int x) {
 
     // 添加文件头注释
     const header = `/* 
- * 此文件从 FFmpeg fftools/ffmpeg.c 自动生成
- * main() 函数已重命名为 ffmpeg_entry() 供 Node.js 调用
+ * This file is auto-generated from FFmpeg fftools/ffmpeg.c
+ * main() function has been renamed to ffmpeg_entry() for Node.js calling
  * 
- * 原始文件: ${ffmpegCPath}
- * 生成时间: ${new Date().toISOString()}
+ * Original file: ${ffmpegCPath}
+ * Generated time: ${new Date().toISOString()}
  */
 
 `;
