@@ -15,6 +15,7 @@ vcpkg/
 
 # FFmpeg work directory
 lib_sources/
+ffmpeg_crt.c
 
 # Test outputs
 test_output.*
