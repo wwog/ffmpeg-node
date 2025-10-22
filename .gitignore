@@ -14,7 +14,7 @@ build/
 vcpkg/
 
 # FFmpeg work directory
-lib_work/
+lib_sources/
 
 # Test outputs
 test_output.*
