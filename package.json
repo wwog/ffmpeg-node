@@ -8,7 +8,9 @@
   "scripts": {
     "install:vcpkg": "node scripts/install_vcpkg.js",
     "prepare": "node scripts/prepare.js",
+    "setup:mingw": "node scripts/setup_mingw.js",
     "build": "node-gyp rebuild",
+    "build:mingw": "npm run setup:mingw && node-gyp rebuild",
     "install": "npm run install:vcpkg && npm run prepare && node-gyp rebuild",
     "test": "node test.js",
     "examples": "node examples.js",

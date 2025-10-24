@@ -61,11 +61,24 @@
               "_WINDOWS",
               "_CRT_SECURE_NO_WARNINGS"
             ],
-            "msvs_settings": {
-              "VCCLCompilerTool": {
-                "AdditionalOptions": ["/std:c11"]
-              }
-            }
+            "cflags": [
+              "-std=c11",
+              "-D__STDC_VERSION__=201112L"
+            ],
+            "ldflags": [
+              "-static-libgcc",
+              "-static-libstdc++"
+            ],
+            "conditions": [
+              ["target_arch=='x64'", {
+                "cflags": ["-m64"],
+                "ldflags": ["-m64"]
+              }],
+              ["target_arch=='ia32'", {
+                "cflags": ["-m32"],
+                "ldflags": ["-m32"]
+              }]
+            ]
           }
         ],
         [
