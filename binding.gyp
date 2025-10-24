@@ -54,7 +54,7 @@
               "<(module_root_dir)/vcpkg/installed/x64-windows-static/lib/avutil.lib",
               "<(module_root_dir)/vcpkg/installed/x64-windows-static/lib/swscale.lib",
               "<(module_root_dir)/vcpkg/installed/x64-windows-static/lib/swresample.lib",
-              "<(module_root_dir)/vcpkg/installed/x64-windows-static/lib/x264.lib"
+              "<(module_root_dir)/vcpkg/installed/x64-windows-static/lib/libx264.lib"
             ],
             "defines": [
               "WIN32",
