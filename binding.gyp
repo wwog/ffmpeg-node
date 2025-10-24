@@ -60,7 +60,12 @@
               "WIN32",
               "_WINDOWS",
               "_CRT_SECURE_NO_WARNINGS"
-            ]
+            ],
+            "msvs_settings": {
+              "VCCLCompilerTool": {
+                "AdditionalOptions": ["/std:c11"]
+              }
+            }
           }
         ],
         [
